@@ -10,4 +10,4 @@ $log->pushHandler(new StreamHandler('path/to/your.log', Logger::WARNING));
 
 // add records to the log
 $log->warning('c');
-$log->error('lan');
+$log->error('ni');
