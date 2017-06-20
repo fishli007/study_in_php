@@ -3,6 +3,7 @@
         "monolog/monolog": "^1.22",
         "symfony/routing": "^3.3",
         "illuminate/database": "^5.4",
-        "illuminate/events": "^5.4"
+        "illuminate/events": "^5.4",
+        "aura/autoload": "^2.0"
     }
 }

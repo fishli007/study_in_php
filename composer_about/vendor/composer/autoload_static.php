@@ -39,6 +39,10 @@ class ComposerStaticInit05ed0c359011e8eb584fd839757cf7bb
         array (
             'Carbon\\' => 7,
         ),
+        'A' => 
+        array (
+            'Aura\\Autoload\\' => 14,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -85,6 +89,10 @@ class ComposerStaticInit05ed0c359011e8eb584fd839757cf7bb
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'Aura\\Autoload\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/autoload/src',
         ),
     );
 
