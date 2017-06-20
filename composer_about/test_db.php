@@ -9,12 +9,13 @@ require_once "vendor/autoload.php";
 
 
 // instantiate
-$loader = new \Aura\Autoload\Loader;
+$loader = new Aura\Autoload\Loader;
 
 // append to the SPL autoloader stack; use register(true) to prepend instead
 $loader->register();
 
 $loader->addPrefix('Fishli', 'fishli/src');
+// $loader->addPrefix('Fishli', 'D:/Disk-code/wamp/www/study_in_php/composer_about/fishli/src');
 
 
 use Illuminate\Database\Capsule\Manager;
