@@ -1,6 +1,7 @@
 {
     "require": {
         "monolog/monolog": "^1.22",
-        "symfony/routing": "^3.3"
+        "symfony/routing": "^3.3",
+        "jenssegers/model": "^1.1"
     }
 }

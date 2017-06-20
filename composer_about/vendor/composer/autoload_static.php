@@ -6,6 +6,11 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit05ed0c359011e8eb584fd839757cf7bb
 {
+    public static $files = array (
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
@@ -18,6 +23,15 @@ class ComposerStaticInit05ed0c359011e8eb584fd839757cf7bb
         'M' => 
         array (
             'Monolog\\' => 8,
+        ),
+        'J' => 
+        array (
+            'Jenssegers\\Model\\' => 17,
+        ),
+        'I' => 
+        array (
+            'Illuminate\\Support\\' => 19,
+            'Illuminate\\Contracts\\' => 21,
         ),
     );
 
@@ -34,6 +48,28 @@ class ComposerStaticInit05ed0c359011e8eb584fd839757cf7bb
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
+        'Jenssegers\\Model\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jenssegers/model/src',
+        ),
+        'Illuminate\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/support',
+        ),
+        'Illuminate\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/illuminate/contracts',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'D' => 
+        array (
+            'Doctrine\\Common\\Inflector\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
+            ),
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -41,6 +77,7 @@ class ComposerStaticInit05ed0c359011e8eb584fd839757cf7bb
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit05ed0c359011e8eb584fd839757cf7bb::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit05ed0c359011e8eb584fd839757cf7bb::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit05ed0c359011e8eb584fd839757cf7bb::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
